@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: "GmarketSans", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  background-color: #242a38; /* #071426;*/
+  /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/network-g38da96c56_1920.jpg"); */
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.add-padding {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+/* header area */
+.gnb {
+  list-style-type: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.gnb-item {
+  margin: 0 20px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  transition: transform ease 0.5s;
+}
+
+.gnb-item:hover {
+  cursor: pointer;
+  transform: translate(0, -5px);
+  color: #f54e65;
+}
+
+/* main area */
+
+#main-name {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.main-text p {
+  font-size: 0.8rem;
+}
+
+#main-links a {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-right: 10px;
+}
+
+#main-job {
+  color: #f67f5e;
+  font-size: 1em;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-text * {
+  margin: 5px 0;
+}
+
+.main-text h1 {
+  color: #fff;
+}
+
+.main-text button {
+  background: none;
+  border: 1px solid #f67f5e;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+.main-text button:hover {
+  background-color: #f67f5e;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.main-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-image > img {
+  width: 30vw;
+  max-width: 250px;
+  border-radius: 50%;
+  border: solid 2px #f67f5e;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media (min-width: 900px) {
+  .main-content {
+    width: 900px;
+    margin: 15vw auto;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .add-padding {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .main-content {
+    margin: 5vw 0;
+    padding-left: 10vw;
+  }
+
+  .main-image > img {
+    width: 300px;
+  }
+
+  #my-name {
+    font-size: 1.2rem;
+  }
+
+  .gnb li {
+    font-size: 0.8rem;
+    margin: 0 15px;
+  }
+}
