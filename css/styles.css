@@ -157,7 +157,7 @@ body {
 
 @media (max-width: 900px) {
   .main-content {
-    margin: 20vh 0 0vh 0;
+    margin: 10vh 0 0vh 0;
     height: 100vh;
   }
 
@@ -180,7 +180,7 @@ body {
 /* About.html */
 .about-container {
   height: 100vh;
-  padding: 5vw;
+  padding: 0 5vw;
   background-color: #0b0014;
   display: flex;
   align-items: center;
