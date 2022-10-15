@@ -5,36 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Justin Lee</title>
-    <link rel="stylesheet" href="./css/font.css" />
+    <link href="http://fonts.cdnfonts.com/css/brisa-sans" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
       <nav>
         <ul class="add-padding gnb">
-          <li class="gnb-item">Home</li>
-          <li class="gnb-item">About Me</li>
-          <li class="gnb-item">Portfolio</li>
-          <li class="gnb-item">Contact</li>
+          <li class="gnb-item"><a href="#">Home</a></li>
+          <li class="gnb-item"><a href="#about-me">About Me</a></li>
+          <li class="gnb-item"><a href="./portfolio.html">Portfolio</a></li>
+          <li class="gnb-item"><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="main-content add-padding">
         <div class="main-text">
-          <p></p>
-          <h1 id="main-name">Hi, I'm Justin Lee.</h1>
-          <p id="main-job">
-            I'm a Web Developer&#128104;&#8205;&#128187; and Data
-            Scientist&#128200;
+          <h1 class="main-gradient" id="main-name">Hi, I'm Justin Lee.</h1>
+          <p class="main-gradient" id="main-job">
+            Web Developer + Data Scientist
           </p>
-          <p id="main-subtext">I build creative data-driven applications.</p>
+          <!-- <span>&#128104;&#8205;&#128187;&#128200;</span> -->
+          <p>I build creative data-driven applications.</p>
           <p id="main-links">
-            <a href="https://www.linkedin.com/in/munsheet/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-            <a href="https://github.com/joonsmoons" target="_blank"><i class="fa fa-github"></i></a>
-            <a href="https://medium.com/@joonsmoons" target="_blank"><i class="fa fa-medium"></i></a>
+            <a href="https://www.linkedin.com/in/munsheet/" target="_blank"
+              ><i class="fa fa-linkedin-square"></i
+            ></a>
+            <a href="https://github.com/joonsmoons" target="_blank"
+              ><i class="fa fa-github"></i
+            ></a>
+            <a href="https://medium.com/@joonsmoons" target="_blank"
+              ><i class="fa fa-medium"></i
+            ></a>
           </p>
           <div>
             <button>Resume</button>
@@ -42,7 +49,35 @@
           </div>
         </div>
         <div class="main-image">
-          <img src="./img/profile2.jpeg" alt="" />
+          <img src="./img/man-g11969c14c_1920.png" alt="" />
+        </div>
+      </section>
+      <section class="about-container" id="about-me">
+        <div class="about-content">
+          <div class="about-image">
+            <img src="./img/profile3.png" alt="" />
+          </div>
+          <div class="about-text">
+            <h1 class="about-title">About Me</h1>
+            <br />
+            <p>
+              <strong>Justin Lee</strong> is currently a product data scientist
+              at
+              <em
+                ><a href="https://www.coupang.com/" target="_blank"
+                  >Coupang</a
+                ></em
+              >.
+            </p>
+            <p>
+              He is also a web developer passionate about making creative
+              data-driven applications, building community, and mentoring.
+            </p>
+            <p>
+              He mainly handles HTML, CSS and Vanilla JavaScript, and strives to
+              build better foundations around new technologies that come.
+            </p>
+          </div>
         </div>
       </section>
     </main>
