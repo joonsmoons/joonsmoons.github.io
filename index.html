@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Justin Lee</title>
     <link href="http://fonts.cdnfonts.com/css/brisa-sans" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -16,71 +16,112 @@
     <header>
       <nav>
         <ul class="add-padding gnb">
-          <li class="gnb-item"><a href="#">Home</a></li>
-          <li class="gnb-item"><a href="#about-me">About Me</a></li>
-          <li class="gnb-item"><a href="./portfolio.html">Portfolio</a></li>
-          <li class="gnb-item"><a href="./contact.html">Contact</a></li>
+          <li class="gnb-item">
+            <a href="#" class="clean-anchor">Home</a>
+          </li>
+          <li class="gnb-item">
+            <a class="clean-anchor" href="#about-me">About Me</a>
+          </li>
+          <li class="gnb-item">
+            <a class="clean-anchor" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="gnb-item">
+            <a class="clean-anchor" href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="main-content add-padding">
+      <section class="main-content add-padding page-section">
         <div class="main-text">
-          <h1 class="main-gradient" id="main-name">Hi, I'm Justin Lee.</h1>
+          <h1 class="main-gradient" id="main-name">
+            Hi, I'm <span>Justin Lee.</span>
+          </h1>
           <p class="main-gradient" id="main-job">
             Web Developer + Data Scientist
           </p>
           <!-- <span>&#128104;&#8205;&#128187;&#128200;</span> -->
-          <p>I build creative data-driven applications.</p>
+          <p>I create innovative data-driven applications.</p>
           <p id="main-links">
-            <a href="https://www.linkedin.com/in/munsheet/" target="_blank"
+            <a
+              href="https://www.linkedin.com/in/munsheet/"
+              target="_blank"
+              class="clean-anchor"
               ><i class="fa fa-linkedin-square"></i
             ></a>
-            <a href="https://github.com/joonsmoons" target="_blank"
+            <a
+              href="https://github.com/joonsmoons"
+              target="_blank"
+              class="clean-anchor"
               ><i class="fa fa-github"></i
             ></a>
-            <a href="https://medium.com/@joonsmoons" target="_blank"
+            <a
+              href="https://medium.com/@joonsmoons"
+              target="_blank"
+              class="clean-anchor"
               ><i class="fa fa-medium"></i
             ></a>
           </p>
           <div>
-            <button>Resume</button>
-            <!--Add more buttons-->
+            <button>
+              <a
+                href="./assets/Justin-Lee-Resume.pdf"
+                target="_blank"
+                class="clean-anchor"
+                >Resume</a
+              >
+            </button>
+            <!-- TODO: Add more buttons -->
           </div>
         </div>
         <div class="main-image">
-          <img src="./img/man-g11969c14c_1920.png" alt="" />
+          <img src="./assets/img/man-g11969c14c_1920.png" alt="" />
         </div>
       </section>
-      <section class="about-container" id="about-me">
+      <section class="about-container page-section" id="about-me">
         <div class="about-content">
           <div class="about-image">
-            <img src="./img/profile3.png" alt="" />
+            <img src="./assets/img/profile3.png" alt="" />
           </div>
           <div class="about-text">
-            <h1 class="about-title">About Me</h1>
+            <h1 class="content-title">About Me</h1>
+            <br />
             <br />
             <p>
-              <strong>Justin Lee</strong> is currently a product data scientist
-              at
+              I'm <strong>Justin</strong>, a data scientist at
               <em
-                ><a href="https://www.coupang.com/" target="_blank"
+                ><a
+                  href="https://www.coupang.com/"
+                  target="_blank"
+                  class="clean-anchor"
                   >Coupang</a
                 ></em
-              >.
+              >
+              in charge of product analytics and overseeing feature launches.
             </p>
             <p>
-              He is also a web developer passionate about making creative
-              data-driven applications, building community, and mentoring.
+              I strive to become a full-stack web developer, and hope to develop
+              creative data-driven applications, build community, and mentor
+              like-minded individuals.
             </p>
             <p>
-              He mainly handles HTML, CSS and Vanilla JavaScript, and strives to
-              build better foundations around new technologies that come.
+              I mainly handle <em>HTML</em>, <em>CSS</em> and
+              <em>Vanilla JavaScript</em> for day-to-day web development,
+              <em>Python</em>, <em>SQL</em> and <em>R</em> for data science and
+              progress to build better foundations around new technologies that
+              come.
             </p>
           </div>
+        </div>
+      </section>
+      <section class="portfolio-container page-section" id="portfolio">
+        <div class="portfolio-content">
+          <h1 class="content-title">Projects</h1>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <p class="copyright">© 2022 Justin Lee</p>
+    </footer>
   </body>
 </html>
