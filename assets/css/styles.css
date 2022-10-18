@@ -1,3 +1,11 @@
+:root {
+  /* set color variables */
+  --main-bg-color: 27, 27, 30;
+  --text-color: 255, 255, 255;
+  --main-em-color: #f54e65;
+  --secondary-em-color: #f67f5e;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -6,25 +14,39 @@ body {
   margin: 0;
   font-family: "Brisa Sans", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans",
     "Helvetica Neue", sans-serif;
-  font-size: 1rem;
-  background-color: #1b1b1e; /* #071426;*/
-  color: rgba(255, 255, 255, 0.75);
+  background-color: rgb(var(--main-bg-color)); /* #071426;*/
+  color: rgba(var(--text-color), 0.75);
+}
+
+hr {
+  border: 0;
+  margin: 0;
+  width: 100%;
+  border: 0.3px solid rgba(var(--text-color), 0.3);
 }
 
 .clean-anchor {
+  /* removes default text decorations for anchor tags */
   color: inherit;
   text-decoration: none;
 }
 
 .add-padding {
+  /* add some padding left and right */
   padding-left: 5vw;
   padding-right: 5vw;
 }
 
+.slim-text {
+  font-weight: 300;
+}
+
 /* header area */
 .gnb {
+  background-color: rgba(var(--main-bg-color), 0.7);
+  z-index: 1;
   list-style-type: none;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -44,10 +66,15 @@ body {
   margin: 0 15px;
 }
 
+.gnb-item:first-child {
+  margin-right: auto;
+  font-size: 1.5rem;
+}
+
 .gnb-item:hover {
   cursor: pointer;
   transform: translate(0, -5px);
-  color: #f54e65;
+  color: var(--main-em-color);
 }
 
 .page-section {
@@ -56,42 +83,60 @@ body {
 
 /* main area */
 
+.video-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(30%);
+}
+
 .main-content {
-  margin: 10vh 0 0vh 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #main-name {
   /* font-weight: bold; */
-  font-size: 2em;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+#main-job {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
 }
 
 .main-text p {
   font-size: 1rem;
 }
 
-#main-links a {
-  font-size: 1.5rem;
+#main-links i {
+  font-size: 1rem;
   color: #fff;
   margin-right: 10px;
 }
 
-.main-gradient {
-  font-weight: 900;
-  background-image: linear-gradient(
-    90deg,
-    rgba(246, 127, 94, 1) 21%,
-    rgba(245, 78, 101, 1) 67%
-  );
+.fancy-message {
+  font-family: "Yeseva One", cursive;
+  color: var(--main-em-color);
+  /* background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
-#main-job {
-  color: #f67f5e;
-  font-size: 1.2rem;
+  -moz-text-fill-color: transparent; */
 }
 
 .main-text {
@@ -106,13 +151,9 @@ body {
   margin: 5px 0;
 }
 
-.main-text h1 {
-  color: #fff;
-}
-
 .main-text button {
   background: none;
-  border: 1px solid #f67f5e;
+  border: 1px solid var(--secondary-em-color, orange);
   border-radius: 10px;
   color: #fff;
   font-size: 1rem;
@@ -121,57 +162,12 @@ body {
 }
 
 .main-text button:hover {
-  background-color: #f67f5e;
+  background-color: var(--secondary-em-color, orange);
   border: 1px solid #fff;
   cursor: pointer;
 }
 
-.main-image,
-.about-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.main-image > img {
-  width: 200px;
-  border: none;
-  padding: 1rem;
-}
-
-@media (min-width: 900px) {
-  .gnb-item {
-    font-size: 1.1rem;
-    margin: 0 30px;
-  }
-
-  .main-content {
-    width: 900px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 500px;
-    font-size: 1.2rem;
-  }
-
-  .main-text {
-    align-items: start;
-  }
-
-  .about-content {
-    width: 900px;
-    display: grid;
-    margin: 0 auto;
-    grid-template-columns: 1fr 500px;
-    font-size: 1.1rem;
-  }
-
-  .main-image > img {
-    width: 30vw;
-    max-width: 250px;
-  }
-}
-
-/* About.html */
+/* about me */
 .about-container {
   padding: 0 5vw;
   background-color: #0b0014;
@@ -185,17 +181,72 @@ body {
   justify-content: center;
 }
 
-.content-title {
-  border-bottom: 3px solid #f54e65;
-  margin: 0 auto 0 auto;
-  display: inline-block;
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-image > img {
   width: 250px;
   margin: 0 5vw 5vh 5vw;
   border-radius: 50%;
-  background-color: #f67f5e;
+  background-color: var(--secondary-em-color, orange);
+}
+
+.content-title {
+  border-bottom: 3px solid var(--main-em-color);
+  margin: 0 auto 0 auto;
+  display: inline-block;
+  text-align: center;
+}
+
+.tech-skills {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin: 0;
+}
+
+/* work */
+
+.work-content {
+  padding: 10vh 5vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  box-sizing: border-box;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  margin-bottom: 5vh;
+  border-radius: 10px;
+  background-color: rgba(var(--text-color), 0.9);
+  color: black;
+}
+
+.project * {
+  margin-top: 10px;
+}
+
+.project img {
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+  max-width: 100%;
+  max-height: 70vh;
+  border-radius: 10px;
+  margin-top: 0;
+}
+
+.project-name,
+.project-stack {
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
 /* footer */
@@ -203,12 +254,54 @@ body {
   text-align: center;
   font-size: 0.8rem;
   background-color: black;
-  padding: 1rem 0px;
+  padding: 10px 0px;
   margin: 0;
 }
 
-.portfolio-container {
-  padding: 0 5vw;
-  display: flex;
-  align-items: center;
+.main-content {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 900px) {
+  .gnb-item {
+    font-size: 1rem;
+    margin: 0 30px;
+  }
+
+  .main-content {
+    width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    font-size: 1.3rem;
+  }
+
+  .main-text {
+    align-items: start;
+  }
+
+  #main-name {
+    /* font-weight: bold; */
+    font-size: 2.5rem;
+  }
+
+  #main-job {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .about-content {
+    width: 900px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 500px;
+    font-size: 1.1rem;
+  }
+
+  .project img {
+    /* will add more detail as actual projects get uploaded */
+    width: 700px;
+    max-width: 900px;
+    max-height: 400px;
+  }
 }
