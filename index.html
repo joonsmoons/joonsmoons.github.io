@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
-    <title>Justin Lee</title>
+    <meta
+      name="description"
+      content="Justin Lee is a web developer highly skilled at building data-driven web applications."
+    />
+    <title>Justin Lee: Web Developer and Data Scientist</title>
 
     <link
       rel="apple-touch-icon"
@@ -46,6 +50,12 @@
     />
   </head>
   <body>
+    <noscript
+      ><strong
+        >We're sorry but joonsmoons.github.io doesn't work properly without
+        JavaScript enabled. Please enable it to continue.</strong
+      ></noscript
+    >
     <header>
       <nav>
         <ul class="add-padding gnb">
@@ -58,7 +68,7 @@
           <li class="gnb-item">
             <a class="clean-anchor" href="#work">Work</a>
           </li>
-          <li class="gnb-item">
+          <li class="gnb-item"></li>
             <a class="clean-anchor" href="mailto:joonsmoons@gmail.com" disabled>
               <i class="fa fa-envelope"></i>
             </a>
@@ -74,6 +84,7 @@
           loop
           autoplay
           playsinline
+          id="background-video"
         ></video>
 
         <section class="main-content add-padding page-section">
@@ -82,7 +93,6 @@
               Hi, I'm <span class="fancy-message">Justin Lee.</span>
             </h1>
             <div id="main-job">Web Developer + Data Scientist</div>
-            <!-- <span>&#128104;&#8205;&#128187;&#128200;</span> -->
             <p>I create innovative data-driven applications.</p>
             <p id="main-links">
               <a
@@ -124,11 +134,12 @@
       <section class="about-container" id="about-me">
         <div class="about-content">
           <div class="about-image">
-            <img src="./assets/img/profile3.png" alt="" />
+            <!-- TODO: perhaps a better picture -->
+            <img src="./assets/img/taken.png" alt="Photo of Justin" />
           </div>
           <div class="about-text slim-text">
+            <!-- TODO: add ways to choose stack and filter accordingly -->
             <h1 class="content-title">About Me</h1>
-            <br />
             <br />
             <p>
               I'm <strong>Justin</strong>, a data scientist at
@@ -217,9 +228,16 @@
 
     <footer>
       <div class="copyright">
-        <p>Made with Simple HTML and CSS <br /><br /></p>
+        <p>Made with &#128170;</p>
+        <br />
         <p>&#169; 2022 Justin Lee</p>
       </div>
     </footer>
+    <script>
+      let backgroundVideo = document.getElementById("background-video");
+      backgroundVideo.addEventListener("suspend", () => {
+        backgroundVideo.play();
+      });
+    </script>
   </body>
 </html>
