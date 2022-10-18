@@ -173,10 +173,7 @@ hr {
 
 /* about me */
 .about-container {
-  /* height: 100vh; */
-  padding: 0 5vw;
-  padding-top: 10vh;
-  /* background-color: #0b0014; */
+  padding: 10vh 5vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -328,7 +325,7 @@ hr {
   }
 
   .about-container {
-    padding-top: 0vh;
+    padding: 30vh 0;
   }
 
   .about-content {
