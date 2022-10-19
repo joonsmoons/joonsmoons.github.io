@@ -173,10 +173,11 @@ hr {
 
 /* about me */
 .about-container {
-  padding: 10vh 5vw;
+  padding: 0 5vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
 }
 
 .about-text {
@@ -296,6 +297,12 @@ hr {
   font-size: 1rem;
 }
 
+@media screen and (max-height: 500px) {
+  .about-container {
+    padding: 30vh 5vw;
+  }
+}
+
 @media screen and (min-width: 900px) {
   .gnb-item {
     font-size: 1rem;
@@ -328,16 +335,18 @@ hr {
     font-weight: 700;
   }
 
-  .about-container {
-    padding: 30vh 0;
-  }
+  /* .about-container {
+    /* padding: 30vh 0; */
+  /* min-height: 100vh; */
+  /* padding: 0vh 0; */
+  /* }  */
 
   .about-content {
     width: 900px;
     display: grid;
     margin: 0 auto;
     grid-template-columns: 1fr 500px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .project img {
