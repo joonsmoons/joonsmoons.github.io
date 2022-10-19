@@ -36,9 +36,12 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
-    <link href="http://fonts.cdnfonts.com/css/brisa-sans" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org//face/brisa-sans"
+      type="text/css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap"
       rel="stylesheet"
@@ -236,7 +239,8 @@
     <script>
       let backgroundVideo = document.getElementById("background-video");
       backgroundVideo.addEventListener("suspend", () => {
-        backgroundVideo.play();
+        console.log("erase!");
+        backgroundVideo.style.display = "none";
       });
     </script>
   </body>
