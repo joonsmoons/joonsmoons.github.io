@@ -235,10 +235,14 @@
     </footer>
     <script>
       let backgroundVideo = document.getElementById("background-video");
-      backgroundVideo.addEventListener("suspend", () => {
-        console.log("erase!");
-        backgroundVideo.style.display = "none";
-      });
+      backgroundVideo.addEventListener(
+        "suspend",
+        () => {
+          console.log("erase!");
+          backgroundVideo.style.display = "none";
+        },
+        { once: true }
+      );
     </script>
   </body>
 </html>
