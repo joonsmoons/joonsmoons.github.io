@@ -170,11 +170,12 @@ hr {
 
 /* about me */
 .about-container {
-  padding: 0 5vw;
+  padding: 40px 5vw;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  box-sizing: border-box;
 }
 
 .about-text {
@@ -330,6 +331,10 @@ hr {
   #main-job {
     font-size: 1.5rem;
     font-weight: 700;
+  }
+
+  .about-container {
+    padding: 0 5vw;
   }
 
   .about-content {
