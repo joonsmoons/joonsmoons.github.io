@@ -272,22 +272,13 @@
     </footer>
     <script>
       let backgroundVideo = document.getElementById("background-video");
-      backgroundVideo.play();
-
-      backgroundVideo.addEventListener("loadeddata", () => {
-        // console.log("play!");
-        if (backgroundVideo.readyState > 3) {
-          backgroundVideo
-            .play()
-            .then(() => {
-              // console.log("hello");
-            })
-            .catch((err) => {
-              console.log("remove background image!", err);
-              backgroundVideo.style.display = "none";
-            });
-        }
-      });
+      backgroundVideo
+        .play()
+        .then(() => {})
+        .catch((err) => {
+          console.log("remove background image!");
+          backgroundVideo.style.display = "none";
+        });
     </script>
   </body>
 </html>
