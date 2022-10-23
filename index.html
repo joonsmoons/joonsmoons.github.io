@@ -122,7 +122,6 @@
           src="./assets/video/Particles - 27669.mp4"
           muted
           loop
-          autoplay
           playsinline
           id="background-video"
         ></video>
@@ -272,21 +271,17 @@
     </footer>
     <script>
       let backgroundVideo = document.getElementById("background-video");
-      backgroundVideo.play();
-
       backgroundVideo.addEventListener("loadeddata", () => {
-        // console.log("play!");
-        if (backgroundVideo.readyState > 3) {
-          backgroundVideo
-            .play()
-            .then(() => {
-              // console.log("hello");
-            })
-            .catch((err) => {
-              console.log("remove background image!", err);
-              backgroundVideo.style.display = "none";
-            });
-        }
+        console.log("video is loaded!");
+        backgroundVideo
+          .play()
+          .then(() => {
+            // console.log("hello");
+          })
+          .catch((err) => {
+            console.log("remove background image!", err);
+            backgroundVideo.style.display = "none";
+          });
       });
     </script>
   </body>
