@@ -4,6 +4,22 @@
   --text-color: 255, 255, 255;
   --main-em-color: #f54e65;
   --secondary-em-color: #f67f5e;
+  --default-font-size: 16px;
+  --default-profile-size: 450px;
+}
+
+@media (min-width: 2400px) {
+  :root {
+    --default-font-size: 32px;
+    --default-profile-size: 600px;
+  }
+}
+
+@media (min-width: 3600px) {
+  :root {
+    --default-font-size: 48px;
+    --default-profile-size: 800px;
+  }
 }
 
 html {
@@ -25,11 +41,17 @@ hr {
   border: 0.3px solid rgba(var(--text-color), 0.3);
 }
 
-.clean-anchor {
+.link {
   /* removes default text decorations for anchor tags */
   color: inherit;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: var(--default-font-size);
+}
+
+.company {
+  text-decoration: underline;
+  font-style: italic;
+  font-size: calc(var(--default-font-size) * 1.1);
 }
 
 .add-padding {
@@ -63,7 +85,7 @@ hr {
   align-items: center;
   transition: transform ease 0.5s;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: calc(var(--default-font-size) * 0.8);
   margin: 0 15px;
 }
 
@@ -72,7 +94,7 @@ hr {
 }
 
 .home-button {
-  font-size: 1.4rem;
+  font-size: calc(var(--default-font-size) * 1.4);
 }
 
 .gnb-item:hover {
@@ -107,31 +129,26 @@ hr {
   margin: 0;
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 0.8rem;
 }
 
 #main-name {
-  /* font-weight: bold; */
-  font-size: 2rem;
+  font-size: calc(var(--default-font-size) * 2);
   font-weight: 900;
-  color: #fff;
+  color: rgb(var(--text-color));
 }
 
 #main-job {
-  font-size: 1.3rem;
+  font-size: calc(var(--default-font-size) * 1.3);
   font-weight: 600;
-  color: #fff;
-}
-
-.main-text p {
-  font-size: 1rem;
+  color: rgb(var(--text-color));
 }
 
 #main-links i {
-  font-size: 1rem;
-  color: #fff;
+  font-size: calc(var(--default-font-size) * 1.2);
+  color: rgb(var(--text-color));
   margin-right: 10px;
 }
 
@@ -140,29 +157,22 @@ hr {
   color: var(--main-em-color);
 }
 
-.main-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.main-text *,
+.main-content *,
 .about-text * {
-  margin: 5px 0;
+  margin: 0.3em 0;
 }
 
-.main-text button {
+.button {
+  margin-top: 10px;
   background: none;
   border: 1px solid var(--secondary-em-color, orange);
-  border-radius: 10px;
+  border-radius: 0.5em;
   color: #fff;
-  font-size: 1rem;
-  padding: 8px;
+  padding: 0.5em;
   transition: background-color ease-in-out 0.3s;
 }
 
-.main-text button:hover {
+.button:hover {
   background-color: var(--secondary-em-color, orange);
   border: 1px solid #fff;
   cursor: pointer;
@@ -170,22 +180,23 @@ hr {
 
 /* about me */
 .about-container {
-  padding: 40px 5vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  max-width: 90vw;
   min-height: 100vh;
-  box-sizing: border-box;
-}
-
-.about-text {
-  max-width: 550px;
+  margin: 0 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.about-text * {
+  margin-bottom: 1em;
 }
 
 .about-image {
@@ -195,7 +206,7 @@ hr {
 }
 
 .about-image > img {
-  width: 250px;
+  width: calc(var(--default-profile-size) * 0.7);
   margin: 0 auto 5vh auto;
   border-radius: 50%;
   background-color: var(--secondary-em-color, orange);
@@ -206,7 +217,9 @@ hr {
 .content-title {
   color: rgba(var(--text-color));
   border-bottom: 3px solid var(--main-em-color);
+  font-size: calc(var(--default-font-size) * 1.5);
   margin: 0 auto 0 auto;
+  margin-bottom: 1em;
   display: inline-block;
   text-align: center;
 }
@@ -220,7 +233,7 @@ hr {
 
 /* work */
 
-.work-content {
+.work-container {
   padding: 10vh 5vw;
   display: flex;
   flex-direction: column;
@@ -231,9 +244,9 @@ hr {
 
 .project {
   box-sizing: border-box;
-  padding: 1.5rem;
-  margin-top: 2rem;
-  border-radius: 20px;
+  padding: var(--default-font-size);
+  margin: 2em;
+  border-radius: 1em;
   background-color: rgba(var(--text-color), 0.9);
   color: black;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
@@ -245,15 +258,15 @@ hr {
 .project * {
   /* content inside one project */
   margin-top: 1rem;
+  font-size: calc(var(--default-font-size) * 0.9);
 }
 
 .project img {
   object-fit: cover;
   width: 100%;
-  height: 50%;
   max-width: 100%;
   max-height: 70vh;
-  border-radius: 20px;
+  border-radius: 1em;
   margin-top: 0;
 }
 
@@ -264,7 +277,7 @@ hr {
 .project-name,
 .project-stack {
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: calc(var(--default-font-size) * 1.1);
 }
 
 .go-home {
@@ -273,82 +286,81 @@ hr {
 }
 
 .go-home-icon {
-  width: 1rem;
-  height: 1rem;
+  width: calc(var(--default-font-size) * 1.5);
+  height: calc(var(--default-font-size) * 1.5);
 }
 
 /* footer */
 .copyright {
   text-align: center;
-  font-size: 0.8rem;
+  font-size: calc(var(--default-font-size) * 0.8);
   /* background-color: black; */
   padding: 0;
   margin: 0 0 2rem 0;
 }
 
-.copyright * {
-  margin: 0;
+.copyright p {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
 }
 
 .copyright p:first-child {
   color: rgba(var(--text-color));
-  font-size: 1rem;
+  font-size: var(--default-font-size);
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 700px) {
   .about-container {
-    padding: 30vh 5vw;
+    padding: 10vh 5vw;
   }
 }
 
 @media screen and (min-width: 900px) {
   .gnb-item {
-    font-size: 1rem;
+    font-size: var(--default-font-size);
     margin: 0 30px;
   }
 
   .main-content {
-    width: 900px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    font-size: 1.3rem;
+    margin-left: 10vw;
+    font-size: calc(var(--default-font-size) * 1.3);
+    align-items: flex-start;
   }
 
-  .main-text {
-    align-items: start;
-  }
-
-  .main-text p {
-    font-size: 1.2rem;
+  .main-content p,
+  .main-content a {
+    font-size: calc(var(--default-font-size) * 1.1);
   }
 
   #main-name {
-    /* font-weight: bold; */
-    font-size: 2.8rem;
+    font-size: calc(var(--default-font-size) * 2.8);
   }
 
   #main-job {
-    font-size: 1.5rem;
+    font-size: calc(var(--default-font-size) * 1.6);
     font-weight: 700;
   }
 
   .about-container {
     padding: 0 5vw;
-  }
-
-  .about-content {
-    width: 900px;
     display: grid;
-    margin: 0 auto;
-    grid-template-columns: 1fr 550px;
-    font-size: 1.2rem;
+    justify-content: center;
+    grid-template-columns: var(--default-profile-size) 1fr;
+    font-size: calc(var(--default-font-size) * 1.2);
   }
 
   .project img {
     /* will add more detail as actual projects get uploaded */
-    width: 700px;
-    max-width: 900px;
-    max-height: 400px;
+    max-width: 100%;
+    max-height: 80%;
+  }
+
+  .project-bucket {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project {
+    flex-basis: 40%;
   }
 }

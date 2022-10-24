@@ -98,18 +98,18 @@
       <nav>
         <ul class="add-padding gnb">
           <li class="gnb-item">
-            <a href="#" class="clean-anchor home-button">
+            <a href="#" class="link home-button">
               <i class="fa fa-home"></i>
             </a>
           </li>
           <li class="gnb-item">
-            <a class="clean-anchor" href="#about-me">About Me</a>
+            <a class="link" href="#about-me">About Me</a>
           </li>
           <li class="gnb-item">
-            <a class="clean-anchor" href="#work">Work</a>
+            <a class="link" href="#work">Work</a>
           </li>
           <li class="gnb-item">
-            <a class="clean-anchor" href="mailto:joonsmoons@gmail.com" disabled>
+            <a class="link" href="mailto:joonsmoons@gmail.com" disabled>
               <i class="fa fa-envelope"></i>
             </a>
           </li>
@@ -126,123 +126,117 @@
           id="background-video"
         ></video>
 
-        <section class="main-content add-padding page-section">
-          <div class="main-text">
-            <h1 id="main-name">
-              Hi, I'm <span class="fancy-message">Justin Lee.</span>
-            </h1>
-            <div id="main-job">Web Developer + Data Scientist</div>
-            <p>I create innovative data-driven applications.</p>
-            <p id="main-links">
-              <a
-                href="https://medium.com/@joonsmoons"
-                target="_blank"
-                class="clean-anchor"
-                ><i class="fa fa-medium"></i>Read my blog</a
-              >
-              <br />
-              <a
-                href="https://www.linkedin.com/in/munsheet/"
-                target="_blank"
-                class="clean-anchor"
-                ><i class="fa fa-linkedin-square"></i>Connect with me</a
-              >
-              <br />
-              <a
-                href="https://github.com/joonsmoons"
-                target="_blank"
-                class="clean-anchor"
-                ><i class="fa fa-github"></i>Check out my work</a
-              >
-            </p>
-            <div>
-              <button>
-                <a
-                  href="./assets/Justin-Lee-Resume.pdf"
-                  target="_blank"
-                  class="clean-anchor"
-                  >Resume</a
-                >
-              </button>
-              <!-- TODO: Add more buttons -->
-            </div>
+        <div class="main-content page-section">
+          <h1 id="main-name">
+            Hi, I'm <span class="fancy-message">Justin Lee.</span>
+          </h1>
+          <div id="main-job">Web Developer + Data Scientist</div>
+          <p>I create innovative data-driven applications.</p>
+          <div id="main-links">
+            <a
+              href="https://medium.com/@joonsmoons"
+              target="_blank"
+              class="link"
+              ><i class="fa fa-medium"></i> Read my tech blog</a
+            >
+            <br />
+            <a
+              href="https://www.linkedin.com/in/munsheet/"
+              target="_blank"
+              class="link"
+              ><i class="fa fa-linkedin-square"></i> Connect with me</a
+            >
+            <br />
+            <a href="https://github.com/joonsmoons" target="_blank" class="link"
+              ><i class="fa fa-github"></i> Check out my work</a
+            >
           </div>
-        </section>
+          <a
+            href="./assets/Justin-Lee-Resume.pdf"
+            target="_blank"
+            class="button link"
+            >Resume</a
+          >
+          <!-- TODO: Add more buttons -->
+        </div>
       </section>
       <hr />
       <section class="about-container" id="about-me">
-        <div class="about-content">
-          <div class="about-image">
-            <!-- TODO: perhaps a better picture -->
-            <img src="./assets/img/taken.png" alt="Photo of Justin" />
+        <div class="about-image">
+          <!-- TODO: perhaps a better picture -->
+          <img src="./assets/img/taken.png" alt="Photo of Justin" />
+        </div>
+        <div class="about-text slim-text">
+          <!-- TODO: add ways to choose stack and filter accordingly -->
+          <h1 class="content-title">About Me</h1>
+          <p>
+            I'm <strong>Justin</strong>, a data scientist at
+            <a
+              href="https://www.coupang.com/"
+              target="_blank"
+              class="link company"
+              >Coupang</a
+            >
+            in charge of product analytics and overseeing frontend / backend
+            feature launch performance. I have 4+ years experience as senior
+            data scientist across e-commerce, consulting, investment banking,
+            and retail domains.
+          </p>
+          <p>
+            As a full-stack web developer, I specialize in developing creative
+            data-driven applications and visualizations. Building community and
+            mentoring like-minded individuals are some of my other passions.
+          </p>
+          <div class="tech-skills">&#62; Python, SQL, R for data science</div>
+          <div class="tech-skills">
+            &#62; HTML, CSS, Javascript for web development
           </div>
-          <div class="about-text slim-text">
-            <!-- TODO: add ways to choose stack and filter accordingly -->
-            <h1 class="content-title">About Me</h1>
-            <br />
-            <p>
-              I'm <strong>Justin</strong>, a data scientist at Coupang in charge
-              of product analytics and overseeing frontend / backend feature
-              launch performance. I have 4+ years experience as senior data
-              scientist across e-commerce, consulting, investment banking, and
-              retail domains.
-            </p>
-            <p>
-              As a full-stack web developer, I specialize in developing creative
-              data-driven applications and visualizations. Building community
-              and mentoring like-minded individuals are some of my other
-              passions.
-            </p>
-            <br />
-
-            <div class="tech-skills">&#62; Python, SQL, R for data science</div>
-            <div class="tech-skills">
-              &#62; HTML, CSS, Javascript for web development
-            </div>
-            <div class="tech-skills">&#62; Learning React, Vue, Node.js</div>
-          </div>
+          <div class="tech-skills">&#62; Learning React, Vue, Node.js</div>
         </div>
       </section>
 
       <hr />
       <section class="work-container" id="work">
-        <div class="work-content">
-          <h1 class="content-title">Featured Projects</h1>
-          <div class="work-projects">
-            <article>
-              <div class="project">
-                <img
-                  src="./assets/img/stock-g3c7de317d_1920.jpg"
-                  alt="sample app"
-                />
-                <div><span class="project-name">Stock App Sample</span></div>
-                <div>
-                  <span class="project-stack">Tech Stack</span>: HTML, CSS,
-                  Javascript, Vue.js
-                </div>
-              </div>
-            </article>
-            <article>
-              <div class="project">
-                <img
-                  src="./assets/img/phone-1869510_1280.jpeg"
-                  alt="sample app"
-                />
-                <div>
-                  <span class="project-name">Geo-tracking App Sample</span>
-                </div>
-                <div>
-                  <span class="project-stack">Tech Stack</span>: HTML, CSS,
-                  Javascript, D3.js
-                </div>
-              </div>
-            </article>
+        <h1 class="content-title">Featured Projects</h1>
+
+        <div class="project-bucket">
+          <div class="project">
+            <img
+              src="./assets/img/stock-g3c7de317d_1920.jpg"
+              alt="sample app"
+            />
+            <div><span class="project-name">Stock App Sample</span></div>
+            <div>
+              <span class="project-stack">Tech Stack</span>: HTML, CSS,
+              Javascript, Vue.js
+            </div>
+          </div>
+          <div class="project">
+            <img src="./assets/img/phone-1869510_1280.jpeg" alt="sample app" />
+            <div>
+              <span class="project-name">Geo-tracking App Sample</span>
+            </div>
+            <div>
+              <span class="project-stack">Tech Stack</span>: HTML, CSS,
+              Javascript, D3.js
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="./assets/img/stock-g3c7de317d_1920.jpg"
+              alt="sample app"
+            />
+            <div><span class="project-name">Stock App Sample</span></div>
+            <div>
+              <span class="project-stack">Tech Stack</span>: HTML, CSS,
+              Javascript, Vue.js
+            </div>
           </div>
         </div>
       </section>
       <hr />
-      <section class="go-home">
-        <a href="#" class="clean-anchor">
+      <div class="go-home">
+        <a href="#" class="link">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="go-home-icon"
@@ -259,16 +253,14 @@
           </svg>
           <br />Back to the Top
         </a>
-      </section>
+      </div>
     </main>
 
-    <footer>
-      <div class="copyright">
-        <p>Made with &#128170;</p>
-        <br />
-        <p>&#169; 2022 Justin Lee</p>
-      </div>
+    <footer class="copyright">
+      <p>Made with &#128170;</p>
+      <p>&#169; 2022 Justin Lee</p>
     </footer>
+
     <script>
       let backgroundVideo = document.getElementById("background-video");
       backgroundVideo.addEventListener("loadeddata", () => {
