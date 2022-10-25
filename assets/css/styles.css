@@ -5,27 +5,27 @@
   --main-em-color: #f54e65;
   --secondary-em-color: #f67f5e;
   --default-font-size: 14px;
-  --default-profile-size: 450px;
+  --default-profile-size: 400px;
 }
 
 @media (min-width: 1800px) {
   :root {
-    --default-font-size: 24px;
-    --default-profile-size: 520px;
+    --default-font-size: 20px;
+    --default-profile-size: 500px;
   }
 }
 
 @media (min-width: 2400px) {
   :root {
-    --default-font-size: 32px;
+    --default-font-size: 24px;
     --default-profile-size: 600px;
   }
 }
 
 @media (min-width: 3600px) {
   :root {
-    --default-font-size: 48px;
-    --default-profile-size: 800px;
+    --default-font-size: 32px;
+    --default-profile-size: 700px;
   }
 }
 
@@ -38,7 +38,7 @@ body {
   font-family: "Brisa Sans", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans",
     "Helvetica Neue", sans-serif;
   background-color: rgb(var(--main-bg-color)); /* #071426;*/
-  color: rgba(var(--text-color), 0.7);
+  color: rgba(var(--text-color), 0.8);
   font-size: var(--default-font-size);
 }
 
@@ -92,7 +92,7 @@ hr {
   transition: transform ease 0.5s;
   text-align: center;
   /* font-size: calc(var(--default-font-size) * 0.8); */
-  font-size: 0.8em;
+  font-size: 1em;
   margin: 0 15px;
 }
 
@@ -129,7 +129,7 @@ hr {
   position: absolute;
   object-fit: cover;
   z-index: 0;
-  filter: brightness(60%);
+  filter: brightness(70%);
   /* display: none; */
 }
 
@@ -330,7 +330,7 @@ hr {
 
 @media screen and (min-width: 900px) {
   .gnb-item {
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 0 30px;
   }
 
@@ -342,15 +342,15 @@ hr {
 
   .main-content p,
   .main-content a {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   #main-name {
-    font-size: 2.8em;
+    font-size: 2.5em;
   }
 
   #main-job {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 700;
   }
 
@@ -364,7 +364,7 @@ hr {
 
   .about-image > img {
     margin-left: 0;
-    width: calc(var(--default-profile-size) * 0.8);
+    width: calc(var(--default-profile-size) * 0.7);
   }
 
   .project-bucket {
