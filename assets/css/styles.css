@@ -5,7 +5,7 @@
   --main-em-color: #f54e65;
   --secondary-em-color: #f67f5e;
   --default-font-size: 14px;
-  --default-profile-size: 400px;
+  --default-profile-size: 350px;
 }
 
 @media (min-width: 1800px) {
@@ -40,6 +40,7 @@ body {
   background-color: rgb(var(--main-bg-color)); /* #071426;*/
   color: rgba(var(--text-color), 0.8);
   font-size: var(--default-font-size);
+  font-weight: 300;
 }
 
 hr {
@@ -91,7 +92,6 @@ hr {
   align-items: center;
   transition: transform ease 0.5s;
   text-align: center;
-  /* font-size: calc(var(--default-font-size) * 0.8); */
   font-size: 1em;
   margin: 0 15px;
 }
@@ -101,7 +101,6 @@ hr {
 }
 
 .home-button {
-  /* font-size: calc(var(--default-font-size) * 1.4); */
   font-size: 1.4em;
 }
 
@@ -269,25 +268,39 @@ hr {
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
   transition: transform 0.8s ease-in-out;
+  position: relative;
+  display: inline-block;
 }
 
 .project div:last-child {
   margin-bottom: 0;
 }
 
-.project > * {
-  /* content inside one project */
-  margin-top: 0.5em;
-  font-size: 1em;
-}
-
-.project img {
+.project > img {
   object-fit: cover;
   width: 100%;
-  max-width: 100%;
-  height: 70%;
+  height: 100%;
+
   border-radius: 1em;
   margin-top: 0;
+}
+
+.project-detail {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+
+  left: 0;
+  background-color: rgba(var(--text-color), 0.9);
+  padding: 1em 0 1em 1em;
+}
+
+.project * {
+  /* content inside one project */
+  margin-top: 0.5em;
+  /* font-size: 1.2em; */
+  font-size: 1rem;
 }
 
 .project:hover {
@@ -358,7 +371,10 @@ hr {
     padding: 0 5vw;
     display: grid;
     justify-content: center;
-    grid-template-columns: var(--default-profile-size) 1fr;
+    grid-template-columns: var(--default-profile-size) minmax(
+        calc(var(--default-profile-size) * 1.4),
+        calc(var(--default-profile-size) * 1.9)
+      );
     font-size: 1.2em;
   }
 
@@ -369,6 +385,10 @@ hr {
 
   .project-bucket {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
+  }
+
+  .project * {
+    font-size: 1.1em;
   }
 }
