@@ -196,7 +196,7 @@ hr {
 /* about me */
 .about-container {
   max-width: 90vw;
-
+  min-height: 100vh;
   margin: 0 5vw;
   display: flex;
   flex-direction: column;
@@ -338,9 +338,10 @@ hr {
   font-size: 1.2em;
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 768px) {
   .about-container {
     padding: 10vh 5vw;
+    box-sizing: border-box;
   }
 }
 
@@ -374,7 +375,6 @@ hr {
   }
 
   .about-container {
-    min-height: 100vh;
     padding: 0 5vw;
     display: grid;
     justify-content: center;
