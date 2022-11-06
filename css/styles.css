@@ -391,25 +391,17 @@ hr {
   }
 
   .work-container {
-    padding: 10vh 10vw;
+    padding: 10vh 0;
   }
 
   .project {
-    margin: 1em 2em 1em 2em;
+    margin: 1em;
+    max-width: calc(var(--default-img-size) * 1);
   }
 
   .project-bucket {
     display: grid;
-    grid-template-columns:
-      minmax(
-        calc(var(--default-img-size) * 1),
-        calc(var(--default-img-size) * 1.7)
-      )
-      minmax(
-        calc(var(--default-img-size) * 1),
-        calc(var(--default-img-size) * 1.7)
-      );
-  }
+    grid-template-columns: 1fr 1fr 1fr;
 
   .project * {
     font-size: 1em;
