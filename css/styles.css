@@ -154,6 +154,7 @@ hr {
   font-weight: 900;
   color: rgb(var(--text-color));
   margin: 0 0;
+  font-family: "Yeseva One", cursive;
 }
 
 #main-job {
@@ -168,7 +169,6 @@ hr {
 }
 
 .fancy-message {
-  font-family: "Yeseva One", cursive;
   color: var(--main-em-color);
 }
 
