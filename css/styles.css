@@ -1,9 +1,10 @@
 :root {
   /* set color variables */
-  --main-bg-color: 27, 27, 30;
-  --text-color: 255, 255, 255;
-  --main-em-color: #f54e65;
-  --secondary-em-color: #f67f5e;
+  --main-bg-color: 246, 246, 246;
+  --secondary-bg-color: rgb(64, 64, 64);
+
+  --text-color: 0, 0, 0;
+  --main-em-color: rgb(64, 107, 159);
   --default-font-size: 14px;
   --default-img-size: 350px;
 }
@@ -95,6 +96,10 @@ hr {
   margin: 0 15px;
 }
 
+.gnb-item > a {
+  font-weight: 900;
+}
+
 .gnb-item:first-child {
   margin-right: auto;
 }
@@ -105,7 +110,7 @@ hr {
 
 .gnb-item:hover {
   cursor: pointer;
-  transform: translate(0, -5px);
+  transform: translate(0, -2px);
   color: var(--main-em-color);
 }
 
@@ -179,16 +184,15 @@ hr {
 
 .button {
   margin-top: 10px;
-  background: none;
-  border: 1px solid var(--secondary-em-color, orange);
   border-radius: 0.5em;
-  color: #fff;
+  border: 1px solid rgb(var(--text-color));
+  color: rgb(var(--text-color));
   padding: 0.5em;
   transition: background-color ease-in-out 0.3s;
 }
 
 .button:hover {
-  background-color: var(--secondary-em-color, orange);
+  background-color: var(--primary-em-color, orange);
   border: 1px solid #fff;
   cursor: pointer;
 }
@@ -224,9 +228,9 @@ hr {
   width: calc(var(--default-img-size) * 0.5);
   margin: 0 auto 5vh auto;
   border-radius: 50%;
-  background-color: var(--secondary-em-color, orange);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background-color: var(--secondary-bg-color, orange);
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px; */
 }
 
 .content-title {
@@ -241,7 +245,7 @@ hr {
 }
 
 .tech-skills {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(var(--text-color), 0.5);
   padding-bottom: 5px;
   padding-top: 5px;
   margin: 0;
@@ -261,8 +265,6 @@ hr {
   padding: 1em;
   margin: 1em 1em 1em 1em;
   border-radius: 1em;
-  background-color: rgba(var(--text-color), 0.9);
-  color: black;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
