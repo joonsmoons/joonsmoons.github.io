@@ -53,11 +53,11 @@
 
     <!-- set fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Muli"
+      href="https://fonts.googleapis.com/css?family=Lora"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap"
+      href="https://fonts.googleapis.com/css?family=Rubik"
       rel="stylesheet"
     />
 
@@ -96,7 +96,7 @@
       <nav>
         <ul class="add-padding gnb">
           <li class="gnb-item">
-            <a href="#" class="link home-button">
+            <a href="#" class="link gnb-icon">
               <i class="fa fa-home"></i>
             </a>
           </li>
@@ -107,7 +107,11 @@
             <a class="link" href="#work">Work</a>
           </li>
           <li class="gnb-item">
-            <a class="link" href="mailto:joonsmoons@gmail.com" disabled>
+            <a
+              class="link gnb-icon"
+              href="mailto:joonsmoons@gmail.com"
+              disabled
+            >
               <i class="fa fa-envelope"></i>
             </a>
           </li>
@@ -119,7 +123,7 @@
         <div id="particles-js"></div>
         <div class="main-content page-section">
           <img id="avatar" src="./img/tiny-justin.svg" alt="avatar" />
-          <h1 id="main-name">
+          <h1 id="main-name" class="header-font">
             Hi, I'm <span class="fancy-message">Justin Lee.</span>
           </h1>
           <div id="main-job">Web Developer + Data Scientist</div>
@@ -156,11 +160,11 @@
       <section class="about-container" id="about-me">
         <div class="about-image">
           <!-- TODO: perhaps a better picture -->
-          <img src="./img/taken.png" alt="Photo of Justin" />
+          <img src="./img/taken.jpeg" alt="Photo of Justin" />
         </div>
         <div class="about-text slim-text">
           <!-- TODO: add ways to choose stack and filter accordingly -->
-          <h1 class="content-title">About Me</h1>
+          <p class="content-title header-font">About Me</p>
           <p>
             I'm <strong>Justin</strong>, a data scientist at
             <a
@@ -170,15 +174,17 @@
               >Coupang</a
             >
             in charge of product analytics and overseeing frontend / backend
-            feature launch performance. I have 4+ years experience as senior
-            data scientist across e-commerce, consulting, investment banking,
-            and retail domains.
+            feature launch performance. I have 4+ years experience as
+            <span class="fancy-message">senior data scientist</span> across
+            e-commerce, consulting, investment banking, and retail domains.
           </p>
           <p>
-            As a full-stack web developer, I specialize in developing creative
-            data-driven applications and visualizations. Building community and
-            mentoring like-minded individuals are some of my other passions.
+            As a <span class="fancy-message">full-stack web developer</span>, I
+            specialize in developing creative data-driven applications and
+            visualizations. Building community and mentoring like-minded
+            individuals are some of my other passions.
           </p>
+
           <div class="tech-skills">&#62; Python, SQL, R for data science</div>
           <div class="tech-skills">
             &#62; HTML, CSS, Javascript for web development
@@ -189,7 +195,7 @@
 
       <hr />
       <section class="work-container" id="work">
-        <h1 class="content-title">Featured Projects</h1>
+        <p class="content-title header-font">Featured Projects</p>
 
         <div class="project-bucket">
           <div class="project">

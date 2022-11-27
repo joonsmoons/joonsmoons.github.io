@@ -9,23 +9,23 @@
   --default-img-size: 350px;
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1800px) or (min-height: 1000px) {
   :root {
-    --default-font-size: 18px;
+    --default-font-size: 20px;
     --default-img-size: 500px;
   }
 }
 
 @media (min-width: 2400px) {
   :root {
-    --default-font-size: 22px;
+    --default-font-size: 24px;
     --default-img-size: 600px;
   }
 }
 
 @media (min-width: 3600px) {
   :root {
-    --default-font-size: 26px;
+    --default-font-size: 28px;
     --default-img-size: 700px;
   }
 }
@@ -36,8 +36,10 @@ html {
 
 body {
   margin: 0;
-  font-family: "Muli", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans",
+  font-family: Rubik, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans",
     "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 300;
   background-color: rgb(var(--main-bg-color)); /* #071426;*/
   color: rgba(var(--text-color), 0.8);
   font-size: var(--default-font-size);
@@ -49,6 +51,11 @@ hr {
   margin: 0;
   width: 100%;
   border: 0.3px solid rgba(var(--text-color), 0.3);
+}
+
+.header-font {
+  font-family: Lora, serif;
+  font-style: normal;
 }
 
 .link {
@@ -94,18 +101,16 @@ hr {
   transition: transform ease 0.5s;
   text-align: center;
   margin: 0 15px;
+  font-size: 1rem;
+  font-weight: 900;
 }
 
-.gnb-item > a {
-  font-weight: 900;
+.gnb li:first-child {
+  font-size: 1.7rem;
 }
 
 .gnb-item:first-child {
   margin-right: auto;
-}
-
-.home-button {
-  font-size: 1.4em;
 }
 
 .gnb-item:hover {
@@ -154,7 +159,6 @@ hr {
   font-weight: 900;
   color: rgb(var(--text-color));
   margin: 0 0;
-  font-family: "Yeseva One", cursive;
 }
 
 #main-job {
@@ -169,6 +173,7 @@ hr {
 }
 
 .fancy-message {
+  font-weight: bolder;
   color: var(--main-em-color);
 }
 
@@ -202,6 +207,7 @@ hr {
   max-width: 90vw;
   min-height: 100vh;
   margin: 0 5vw;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -222,22 +228,18 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2em;
 }
 
 .about-image > img {
-  width: calc(var(--default-img-size) * 0.5);
-  margin: 0 auto 5vh auto;
-  border-radius: 50%;
-  background-color: var(--secondary-bg-color, orange);
-  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+  width: calc(var(--default-img-size) * 0.4);
+  border-radius: 0%;
 }
 
 .content-title {
-  color: rgba(var(--text-color));
   border-bottom: 3px solid var(--main-em-color);
-  /* font-size: calc(var(--default-font-size) * 1.5); */
-  font-size: 1.5em;
+  font-size: 1.5rem;
+  font-weight: bolder;
   margin: 0 auto 0 auto;
   margin-bottom: 1em;
   display: inline-block;
@@ -253,7 +255,7 @@ hr {
 
 /* work */
 .work-container {
-  padding: 10vh 5vw;
+  padding: 3rem 5vw;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -336,7 +338,7 @@ hr {
 
 @media screen and (max-height: 768px) {
   .about-container {
-    padding: 10vh 5vw;
+    padding: 3rem 3vw;
     box-sizing: border-box;
   }
 }
@@ -373,12 +375,21 @@ hr {
   .about-container {
     padding: 0 5vw;
     display: grid;
-    justify-content: center;
     grid-template-columns: var(--default-img-size) minmax(
         calc(var(--default-img-size) * 1.4),
         calc(var(--default-img-size) * 1.9)
       );
     font-size: 1.2em;
+    gap: 1rem;
+  }
+
+  .about-image {
+    flex: 30%;
+    margin-bottom: 0em;
+  }
+
+  .about-text {
+    flex: 60%;
   }
 
   .about-image > img {
@@ -387,7 +398,7 @@ hr {
   }
 
   .work-container {
-    padding: 10vh 0;
+    padding: 3rem 0;
   }
 
   .project {
