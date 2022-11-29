@@ -232,7 +232,7 @@ hr {
 }
 
 .about-image > img {
-  width: calc(var(--default-img-size) * 0.4);
+  width: calc(var(--default-img-size) * 0.3);
   border-radius: 0%;
 }
 
