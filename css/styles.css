@@ -6,7 +6,7 @@
   --text-color: 0, 0, 0;
   --main-em-color: rgb(64, 107, 159);
   --default-font-size: 14px;
-  --default-img-size: 350px;
+  --default-img-size: 400px;
 }
 
 @media (min-width: 1800px) or (min-height: 1000px) {
@@ -373,23 +373,17 @@ hr {
   }
 
   .about-container {
-    padding: 0 5vw;
     display: grid;
     grid-template-columns: var(--default-img-size) minmax(
-        calc(var(--default-img-size) * 1.4),
-        calc(var(--default-img-size) * 1.9)
+        calc(var(--default-img-size) * 1.3),
+        calc(var(--default-img-size) * 1.5)
       );
     font-size: 1.2em;
-    gap: 1rem;
+    margin: 0 1rem;
   }
 
   .about-image {
-    flex: 30%;
     margin-bottom: 0em;
-  }
-
-  .about-text {
-    flex: 60%;
   }
 
   .about-image > img {
