@@ -7,13 +7,9 @@ first_name: Joonsoo
 middle_name:
 last_name: Lee
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  여러 경로로 연락 주실 수 있지만 링크드인으로 연락 주시면 가장 빠르게 응답드릴 수 있습니다.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: data-scientist, data-analyst # add your own keywords or leave empty
 lang: kr # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
