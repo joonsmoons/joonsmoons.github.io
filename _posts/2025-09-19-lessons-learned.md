@@ -7,7 +7,7 @@ tags: data-analysis best-practices
 categories: data-science
 ---
 
-Google 검색 로그 팀에서 일했던 Patrick Riley가 정리한 [Good Data Analysis](https://www.unofficialgoogledatascience.com/2016/10/practical-advice-for-analysis-of-large.html) 문서에서 배운 교훈들을 한국어로 정리해봤다. 실제로 현재 Uber에서도 Data Scientist로 일하면서 공감이 되는 부분들이 대부분이다. **기술, 프로세스, 협업 태도**, 이 세 가지 영역에서 꼭 기억할 만한 포인트를 소개한다.
+Google 검색 로그 팀을 이끌었던 Patrick Riley가 쓴 [Practical advice for analysis of large, complex data sets](https://www.unofficialgoogledatascience.com/2016/10/practical-advice-for-analysis-of-large.html) 문서를 읽고, 핵심 교훈들을 정리해봤다. 지금 Uber에서 Data Scientist로 일하면서도 “아, 맞아” 하고 고개가 끄덕여지는 내용이 많다. 글에서는 기술, 프로세스, 협업 태도 세 가지 영역별로 꼭 챙겨야 할 포인트를 소개한다.
 
 ---
 
