@@ -13,6 +13,7 @@ Google 검색 로그 팀을 이끌었던 Patrick Riley가 쓴 [Practical advice 
 
 #### 🔧 기술 (데이터 다루기)
 
+
 - **요약값 말고 분포 확인하기**
 
 평균/중앙값만 보지 말고 히스토그램, CDF, Q-Q plot으로 데이터 분포 또는 모양을 살펴보기
@@ -45,10 +46,11 @@ Google 검색 로그 팀을 이끌었던 Patrick Riley가 쓴 [Practical advice 
 
 #### 🔄 프로세스 (분석 과정 습관)
 
+
 - **Validation → Description → Evaluation 단계 구분**
-- Validation: 데이터가 제대로 찍혔는지 검증
-- Description: "객관적으로 뭐가 보인다"
-- Evaluation: 그게 좋은 건지/나쁜 건지 해석
+  - Validation: 데이터가 제대로 찍혔는지 검증
+  - Description: "객관적으로 뭐가 보인다"
+  - Evaluation: 그게 좋은 건지/나쁜 건지 해석
 
 - **실험/데이터 수집 구조 먼저 확인**
 
@@ -81,6 +83,7 @@ Google 검색 로그 팀을 이끌었던 Patrick Riley가 쓴 [Practical advice 
 ---
 
 #### 👥 협업 태도 (협업 & 소통)
+
 
 - **무조건 질문에서부터 출발**
 
