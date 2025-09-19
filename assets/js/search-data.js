@@ -27,26 +27,15 @@ ninja.data = [{
             window.location.href = "/blog/2025/lessons-learned/";
           
         },
-      },{id: "post-a-post-with-plotly-js",
+      },{id: "post-첫글",
         
-          title: "a post with plotly.js",
+          title: "첫글",
         
-        description: "this is what included plotly.js code could look like",
+        description: "첫글",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/plotly/";
-          
-        },
-      },{id: "post-a-post-with-image-galleries",
-        
-          title: "a post with image galleries",
-        
-        description: "this is what included image galleries could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/photo-gallery/";
+            window.location.href = "/blog/2025/first/";
           
         },
       },{id: "news-새로운-시작",
