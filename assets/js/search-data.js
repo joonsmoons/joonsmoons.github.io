@@ -16,7 +16,40 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "news-새로운-시작",
+        },{id: "post-좋은-데이터-분석이란",
+        
+          title: "좋은 데이터 분석이란",
+        
+        description: "크고(Big) 복잡한(Complex) 데이터셋을 분석할 때 배운 실전 팁과 교훈",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/lessons-learned/";
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
+        
+          title: "a post with plotly.js",
+        
+        description: "this is what included plotly.js code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/plotly/";
+          
+        },
+      },{id: "post-a-post-with-image-galleries",
+        
+          title: "a post with image galleries",
+        
+        description: "this is what included image galleries could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/photo-gallery/";
+          
+        },
+      },{id: "news-새로운-시작",
           title: '새로운 시작',
           description: "",
           section: "News",},{
