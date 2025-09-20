@@ -39,7 +39,7 @@ ninja.data = [{
           
         },
       },{id: "news-새로운-시작",
-          title: '새로운 시작',
+          title: '새로운 시작!',
           description: "",
           section: "News",},{
         id: 'social-email',
