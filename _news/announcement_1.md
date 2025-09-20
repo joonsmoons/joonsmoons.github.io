@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-새로운 시작
+새로운 시작!
