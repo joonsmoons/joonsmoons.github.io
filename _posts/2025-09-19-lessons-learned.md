@@ -7,11 +7,11 @@ tags: data-analysis best-practices
 categories: data-science
 ---
 
-Google 검색 로그 팀을 이끌었던 Patrick Riley가 쓴 [Practical advice for analysis of large, complex data sets](https://www.unofficialgoogledatascience.com/2016/10/practical-advice-for-analysis-of-large.html) 문서를 읽고, 핵심 교훈들을 정리해봤다. 지금 Uber에서 Data Scientist로 일하면서도 “아, 맞아” 하고 고개가 끄덕여지는 내용이 많다. 글에서는 기술, 프로세스, 협업 태도 세 가지 영역별로 꼭 챙겨야 할 포인트를 소개한다.
+Google 검색 로그 팀을 이끌었던 Patrick Riley가 쓴 [Practical advice for analysis of large, complex data sets](https://www.unofficialgoogledatascience.com/2016/10/practical-advice-for-analysis-of-large.html) 문서를 읽고, 핵심 교훈들을 정리해봤다. 지금 Uber에서 Data Scientist로 일하면서도 “맞아 맞아” 하고 고개가 끄덕여지는 내용이 많다. 글에서는 (1) 기술, (2) 프로세스, (3) 협업 태도 세 가지 영역별로 꼭 챙겨야 할 포인트를 소개한다.
 
 ---
 
-#### 🔧 기술
+#### (1) 🔧 기술
 
 - **요약값 말고 분포 확인하기**
 
@@ -43,9 +43,9 @@ Google 검색 로그 팀을 이끌었던 Patrick Riley가 쓴 [Practical advice 
 
 ---
 
-#### 🔄 프로세스
+#### (2) 🔄 프로세스
 
-- **Validation → Description → Evaluation 단계 구분**
+- **Validation → Description → Evaluation**
 
 Validation: 데이터가 제대로 찍혔는지 검증
 
@@ -83,7 +83,7 @@ Evaluation: 그게 좋은 건지/나쁜 건지 해석
 
 ---
 
-#### 👥 협업 태도 (협업 & 소통)
+#### (3) 👥 협업 태도
 
 - **무조건 질문에서부터 출발**
 
