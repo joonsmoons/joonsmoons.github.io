@@ -27,6 +27,11 @@ body.sticky-bottom-footer {
   padding-bottom: 0;
 }
 
+// h4 헤더와 바로 오는 리스트 간격 조정
+h4 + ul {
+  margin-top: 0.75rem;
+}
+
 .container {
   max-width: $max-content-width;
 }
