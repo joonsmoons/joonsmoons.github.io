@@ -11,7 +11,7 @@ Google 검색 로그 팀을 이끌었던 Patrick Riley가 쓴 [Practical advice 
 
 ---
 
-#### 🔧 기술 (데이터 다루기)
+#### 🔧 기술
 
 - **요약값 말고 분포 확인하기**
 
@@ -43,7 +43,7 @@ Google 검색 로그 팀을 이끌었던 Patrick Riley가 쓴 [Practical advice 
 
 ---
 
-#### 🔄 프로세스 (분석 과정 습관)
+#### 🔄 프로세스
 
 - **Validation → Description → Evaluation 단계 구분**
 
@@ -65,7 +65,7 @@ Google 검색 로그 팀을 이끌었던 Patrick Riley가 쓴 [Practical advice 
 
 - **Reproducibility 확보**
 
-다른 시간대, 다른 샘플에서도 동일한 인사이트, 통계가 나타나야 믿을 수 있는 수치가 나온다
+다른 시간대 다른 표본에서도 동일한 인사이트, 통계가 나타나야 믿을 수 있는 수치가 나온다
 
 - **과거 수치랑 비교하기**
 
@@ -115,7 +115,7 @@ Google 검색 로그 팀을 이끌었던 Patrick Riley가 쓴 [Practical advice 
 
 #### ✨ 결론
 
-데이터 분석은 단순히 숫자 뽑는 게 아니라,
+데이터 분석은 단순하게 숫자만 뽑는 게 아니라,
 
 **기술적 꼼꼼함 + 프로세스적 습관 + 건강한 소통**
 
