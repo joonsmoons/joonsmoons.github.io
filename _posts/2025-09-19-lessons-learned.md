@@ -48,7 +48,9 @@ Google 검색 로그 팀을 이끌었던 Patrick Riley가 쓴 [Practical advice 
 - **Validation → Description → Evaluation 단계 구분**
 
 Validation: 데이터가 제대로 찍혔는지 검증
+
 Description: "객관적으로 뭐가 보인다"
+
 Evaluation: 그게 좋은 건지/나쁜 건지 해석
 
 - **실험/데이터 수집 구조 먼저 확인**
